@@ -2,3 +2,4 @@ vendor
 .idea
 web/*
 !web/.gitkeep
+signature_count.txt
