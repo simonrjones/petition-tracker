@@ -1,0 +1,270 @@
+[
+    {
+        "date": "Sat, 25 Jun 2016 15:25:01 +0100",
+        "signature_count": 1600606
+    },
+    {
+        "date": "Sat, 25 Jun 2016 15:30:01 +0100",
+        "signature_count": 1616733
+    },
+    {
+        "date": "Sat, 25 Jun 2016 15:35:01 +0100",
+        "signature_count": 1630092
+    },
+    {
+        "date": "Sat, 25 Jun 2016 15:40:01 +0100",
+        "signature_count": 1642605
+    },
+    {
+        "date": "Sat, 25 Jun 2016 15:45:01 +0100",
+        "signature_count": 1653860
+    },
+    {
+        "date": "Sat, 25 Jun 2016 15:50:01 +0100",
+        "signature_count": 1665567
+    },
+    {
+        "date": "Sat, 25 Jun 2016 15:55:01 +0100",
+        "signature_count": 1676884
+    },
+    {
+        "date": "Sat, 25 Jun 2016 16:00:01 +0100",
+        "signature_count": 1688313
+    },
+    {
+        "date": "Sat, 25 Jun 2016 16:05:02 +0100",
+        "signature_count": 1699587
+    },
+    {
+        "date": "Sat, 25 Jun 2016 16:10:01 +0100",
+        "signature_count": 1711243
+    },
+    {
+        "date": "Sat, 25 Jun 2016 16:15:02 +0100",
+        "signature_count": 1722680
+    },
+    {
+        "date": "Sat, 25 Jun 2016 16:20:01 +0100",
+        "signature_count": 1732548
+    },
+    {
+        "date": "Sat, 25 Jun 2016 16:25:02 +0100",
+        "signature_count": 1743706
+    },
+    {
+        "date": "Sat, 25 Jun 2016 16:30:02 +0100",
+        "signature_count": 1754685
+    },
+    {
+        "date": "Sat, 25 Jun 2016 16:35:02 +0100",
+        "signature_count": 1765889
+    },
+    {
+        "date": "Sat, 25 Jun 2016 16:40:01 +0100",
+        "signature_count": 1776504
+    },
+    {
+        "date": "Sat, 25 Jun 2016 16:45:01 +0100",
+        "signature_count": 1786475
+    },
+    {
+        "date": "Sat, 25 Jun 2016 16:50:02 +0100",
+        "signature_count": 1797442
+    },
+    {
+        "date": "Sat, 25 Jun 2016 16:55:02 +0100",
+        "signature_count": 1809043
+    },
+    {
+        "date": "Sat, 25 Jun 2016 17:00:01 +0100",
+        "signature_count": 1820311
+    },
+    {
+        "date": "Sat, 25 Jun 2016 17:05:02 +0100",
+        "signature_count": 1831670
+    },
+    {
+        "date": "Sat, 25 Jun 2016 17:10:01 +0100",
+        "signature_count": 1843198
+    },
+    {
+        "date": "Sat, 25 Jun 2016 17:15:01 +0100",
+        "signature_count": 1854261
+    },
+    {
+        "date": "Sat, 25 Jun 2016 17:20:01 +0100",
+        "signature_count": 1864867
+    },
+    {
+        "date": "Sat, 25 Jun 2016 17:25:01 +0100",
+        "signature_count": 1875919
+    },
+    {
+        "date": "Sat, 25 Jun 2016 17:30:02 +0100",
+        "signature_count": 1886943
+    },
+    {
+        "date": "Sat, 25 Jun 2016 17:35:01 +0100",
+        "signature_count": 1898168
+    },
+    {
+        "date": "Sat, 25 Jun 2016 17:40:01 +0100",
+        "signature_count": 1909229
+    },
+    {
+        "date": "Sat, 25 Jun 2016 17:45:01 +0100",
+        "signature_count": 1920029
+    },
+    {
+        "date": "Sat, 25 Jun 2016 17:50:02 +0100",
+        "signature_count": 1931309
+    },
+    {
+        "date": "Sat, 25 Jun 2016 17:55:02 +0100",
+        "signature_count": 1942645
+    },
+    {
+        "date": "Sat, 25 Jun 2016 18:00:01 +0100",
+        "signature_count": 1954122
+    },
+    {
+        "date": "Sat, 25 Jun 2016 18:05:01 +0100",
+        "signature_count": 1965619
+    },
+    {
+        "date": "Sat, 25 Jun 2016 18:10:02 +0100",
+        "signature_count": 1976364
+    },
+    {
+        "date": "Sat, 25 Jun 2016 18:15:01 +0100",
+        "signature_count": 1987479
+    },
+    {
+        "date": "Sat, 25 Jun 2016 18:20:04 +0100",
+        "signature_count": 1997582
+    },
+    {
+        "date": "Sat, 25 Jun 2016 18:25:01 +0100",
+        "signature_count": 2007896
+    },
+    {
+        "date": "Sat, 25 Jun 2016 18:30:02 +0100",
+        "signature_count": 2019556
+    },
+    {
+        "date": "Sat, 25 Jun 2016 18:35:02 +0100",
+        "signature_count": 2030914
+    },
+    {
+        "date": "Sat, 25 Jun 2016 18:40:01 +0100",
+        "signature_count": 2042007
+    },
+    {
+        "date": "Sat, 25 Jun 2016 18:45:01 +0100",
+        "signature_count": 2053112
+    },
+    {
+        "date": "Sat, 25 Jun 2016 18:50:01 +0100",
+        "signature_count": 2064285
+    },
+    {
+        "date": "Sat, 25 Jun 2016 18:55:01 +0100",
+        "signature_count": 2075029
+    },
+    {
+        "date": "Sat, 25 Jun 2016 19:00:02 +0100",
+        "signature_count": 2086707
+    },
+    {
+        "date": "Sat, 25 Jun 2016 19:05:02 +0100",
+        "signature_count": 2098189
+    },
+    {
+        "date": "Sat, 25 Jun 2016 19:10:01 +0100",
+        "signature_count": 2109805
+    },
+    {
+        "date": "Sat, 25 Jun 2016 19:15:01 +0100",
+        "signature_count": 2121370
+    },
+    {
+        "date": "Sat, 25 Jun 2016 19:20:01 +0100",
+        "signature_count": 2131994
+    },
+    {
+        "date": "Sat, 25 Jun 2016 19:30:01 +0100",
+        "signature_count": 2139507
+    },
+    {
+        "date": "Sat, 25 Jun 2016 19:35:02 +0100",
+        "signature_count": 2150743
+    },
+    {
+        "date": "Sat, 25 Jun 2016 19:40:02 +0100",
+        "signature_count": 2161665
+    },
+    {
+        "date": "Sat, 25 Jun 2016 19:45:01 +0100",
+        "signature_count": 2172428
+    },
+    {
+        "date": "Sat, 25 Jun 2016 19:50:02 +0100",
+        "signature_count": 2182961
+    },
+    {
+        "date": "Sat, 25 Jun 2016 19:55:01 +0100",
+        "signature_count": 2193144
+    },
+    {
+        "date": "Sat, 25 Jun 2016 20:00:01 +0100",
+        "signature_count": 2203595
+    },
+    {
+        "date": "Sat, 25 Jun 2016 20:05:02 +0100",
+        "signature_count": 2213662
+    },
+    {
+        "date": "Sat, 25 Jun 2016 20:10:02 +0100",
+        "signature_count": 2223750
+    },
+    {
+        "date": "Sat, 25 Jun 2016 20:15:01 +0100",
+        "signature_count": 2233875
+    },
+    {
+        "date": "Sat, 25 Jun 2016 20:20:01 +0100",
+        "signature_count": 2243380
+    },
+    {
+        "date": "Sat, 25 Jun 2016 20:25:01 +0100",
+        "signature_count": 2253014
+    },
+    {
+        "date": "Sat, 25 Jun 2016 20:30:01 +0100",
+        "signature_count": 2262729
+    },
+    {
+        "date": "Sat, 25 Jun 2016 20:35:02 +0100",
+        "signature_count": 2272989
+    },
+    {
+        "date": "Sat, 25 Jun 2016 20:40:01 +0100",
+        "signature_count": 2282783
+    },
+    {
+        "date": "Sat, 25 Jun 2016 20:45:02 +0100",
+        "signature_count": 2292783
+    },
+    {
+        "date": "Sat, 25 Jun 2016 20:50:06 +0100",
+        "signature_count": 2302985
+    },
+    {
+        "date": "Sat, 25 Jun 2016 20:55:01 +0100",
+        "signature_count": 2313181
+    },
+    {
+        "date": "Sat, 25 Jun 2016 21:23:11 +0100",
+        "signature_count": 2370513
+    }
+]
