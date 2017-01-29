@@ -3,7 +3,7 @@ use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local;
 
 error_reporting(E_ALL);
-ini_set('display_errors', 1);
+ini_set('display_errors', 0);
 date_default_timezone_set('Europe/London');
 
 require 'vendor/autoload.php';
@@ -151,7 +151,7 @@ $timeToReach = function($target) use ($lastCount, $average) {
 <body>
 
 <h1>Petition tracker</h1>
-<h2><a href="https://petition.parliament.uk/petitions/131215">EU Referendum Rules triggering a 2nd EU Referendum</a></h2>
+<h2><a href="https://petition.parliament.uk/petitions/171928">Prevent Donald Trump from making a State Visit to the United Kingdom</a></h2>
 
 <dl>
     <dt>Current count on <?php echo $item['date']->format('D jS M') ?> at <?php echo $item['date']->format('g:ia') ?></dt>
@@ -160,8 +160,12 @@ $timeToReach = function($target) use ($lastCount, $average) {
     <dd> <?= number_format($average) ?></dd>
     <dt>Signatures in past hour</dt>
     <dd><?= number_format($pastHour) ?></dd>
+    <?php if ($lastCount < 100000): ?>
+    <dt>Estimated time to 100,000 signatures</dt>
+    <dd><?php echo $timeToReach(100000)->format('r') ?></dd>
+    <?php endif ?>
     <?php
-    $nextMillion = (substr($lastCount, 0, 1)) + 1;
+    $nextMillion = floor($lastCount/1000000)+1;
     ?>
     <dt>Estimated time to <?= $nextMillion ?> million signatures</dt>
     <dd><?php echo $timeToReach($nextMillion * 1000000)->format('r') ?></dd>

@@ -22,7 +22,7 @@ if ($filesystem->has('signature_count.txt')) {
 
 try {
     $client = new GuzzleHttp\Client();
-    $res = $client->request('GET', 'https://petition.parliament.uk/petitions/131215.json', [
+    $res = $client->request('GET', 'https://petition.parliament.uk/petitions/171928.json', [
         'headers' => [
             'User-Agent' => 'Petition-Tracker/1.0 (simon@studio24.net)'
         ]
