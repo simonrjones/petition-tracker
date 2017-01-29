@@ -77,8 +77,9 @@ $series = str_replace(['"Date.parse(', '\')",'], ['Date.parse(', '\'),'], $serie
 $now = new DateTime();
 $oneHourAgo = clone $now;
 $oneHourAgo->sub(new DateInterval('PT1H'));
-$twoHoursAgo = clone $now;
-$twoHoursAgo->sub(new DateInterval('PT2H'));
+$averageTimeSpan = clone $now;
+$averageTimeSpan->sub(new DateInterval('PT30M'));
+$averageTimeSpanText = 'half hour';
 
 $x = 0;
 $average = 0;
@@ -86,7 +87,7 @@ $pastHour = 0;
 $lastCount = 0;
 $lastUpdate = '';
 foreach ($report as $item) {
-    if ($item['date'] >= $twoHoursAgo) {
+    if ($item['date'] >= $averageTimeSpan) {
         $average += $item['increase'];
         $x++;
     }
@@ -156,7 +157,7 @@ $timeToReach = function($target) use ($lastCount, $average) {
 <dl>
     <dt>Current count on <?php echo $item['date']->format('D jS M') ?> at <?php echo $item['date']->format('g:ia') ?></dt>
     <dd><?= number_format($lastCount) ?></dd>
-    <dt>Average signatures every 5 minutes (over past 2hrs)</dt>
+    <dt>Average signatures every 5 minutes (over past <?= $averageTimeSpanText ?>)</dt>
     <dd> <?= number_format($average) ?></dd>
     <dt>Signatures in past hour</dt>
     <dd><?= number_format($pastHour) ?></dd>
