@@ -1,6 +1,10 @@
 <?php
 /**
  * Generate HTML output for one item
+ *
+ * This is automatically called by tracker.php, or you can generate HTML output pages manually via:
+ *
+ * php stats.php 131215 > web/brexit.html
  */
 
 use League\Flysystem\Filesystem;
@@ -17,7 +21,12 @@ $adapter = new Local(__DIR__);
 $filesystem = new Filesystem($adapter);
 
 if (!isset($petitionId) || !is_numeric($petitionId)) {
-    throw new Exception('$petitionId must be set');
+    if ($argc == 2 && isset($argv[1])) {
+        $petitionId = filter_var($argv[1], FILTER_SANITIZE_NUMBER_INT);
+    }
+    if (empty($petitionId)) {
+        throw new Exception('$petitionId must be set');
+    }
 }
 
 $signatureCountFile = 'signature_count.' . $petitionId . '.txt';
@@ -35,7 +44,7 @@ try {
     $client = new GuzzleHttp\Client();
     $res = $client->request('GET', 'https://petition.parliament.uk/petitions/' . $petitionId . '.json', [
         'headers' => [
-            'User-Agent' => 'Petition-Tracker/' . $version . ' (simon@studio24.net)'
+            'User-Agent' => 'Petition-Tracker/1.0.1 (simon@studio24.net)'
         ]
     ]);
 

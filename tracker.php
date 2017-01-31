@@ -16,8 +16,6 @@ function trackPetition($petitionId, $htmlOutput)
 {
     global $filesystem;
 
-    $version = '1.0.1';
-
     $signatureCountFile = 'signature_count.' . $petitionId . '.txt';
     if ($filesystem->has($signatureCountFile)) {
         $signature_count = json_decode($filesystem->read($signatureCountFile));
@@ -32,7 +30,7 @@ function trackPetition($petitionId, $htmlOutput)
         $client = new GuzzleHttp\Client();
         $res = $client->request('GET', 'https://petition.parliament.uk/petitions/' . $petitionId . '.json', [
             'headers' => [
-                'User-Agent' => 'Petition-Tracker/' . $version . ' (simon@studio24.net)'
+                'User-Agent' => 'Petition-Tracker/1.0.1 (simon@studio24.net)'
             ]
         ]);
 
