@@ -265,6 +265,8 @@ $timeToReach = function($target) use ($lastCount, $average) {
     });
 </script>
 
+<p class="small"><a href="/">View all tracked petitions</a></p>
+
 <p class="small">Petition tracker by <a href="https://twitter.com/simonrjones">Simon R Jones</a> / <a href="http://www.studio24.net/">Studio 24</a></p>
 
 <script>
