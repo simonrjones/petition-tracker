@@ -8,7 +8,12 @@ su simonrjones
 git pull
 ```
 
-## Cron
-
 ## Generate stats
+
+Tracks stats (once every 5 mins) and outputs stats HTML page.
+
+```
+php tracker.php
+
+```
 

@@ -1,4 +1,8 @@
 <?php
+/**
+ * Generate HTML output for one item
+ */
+
 use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local;
 
@@ -6,19 +10,46 @@ error_reporting(E_ALL);
 ini_set('display_errors', 0);
 date_default_timezone_set('Europe/London');
 
-require 'vendor/autoload.php';
+require_once 'vendor/autoload.php';
+require_once 'petitions.php';
 
 $adapter = new Local(__DIR__);
 $filesystem = new Filesystem($adapter);
 
-if ($filesystem->has('signature_count.txt')) {
-    $signature_count = json_decode($filesystem->read('signature_count.txt'));
+if (!isset($petitionId) || !is_numeric($petitionId)) {
+    throw new Exception('$petitionId must be set');
+}
+
+$signatureCountFile = 'signature_count.' . $petitionId . '.txt';
+if ($filesystem->has($signatureCountFile)) {
+    $signature_count = json_decode($filesystem->read($signatureCountFile));
     if ($signature_count === false) {
-        throw new Exception('Cannot decode data at signature_count.txt');
+        throw new Exception('Cannot decode data at ' . $signatureCountFile);
     }
 } else {
     throw new Exception('No stats found');
 }
+
+// Get title
+try {
+    $client = new GuzzleHttp\Client();
+    $res = $client->request('GET', 'https://petition.parliament.uk/petitions/' . $petitionId . '.json', [
+        'headers' => [
+            'User-Agent' => 'Petition-Tracker/' . $version . ' (simon@studio24.net)'
+        ]
+    ]);
+
+    if ($res->getStatusCode() == 200) {
+        $data = json_decode($res->getBody());
+        $now = new DateTime();
+
+        $title = $data->data->attributes->action;
+    }
+} catch (Exception $e) {
+    echo "Error: " . $e->getMessage() . PHP_EOL;
+}
+
+$link = 'https://petition.parliament.uk/petitions/' . $petitionId;
 
 $report = [];
 $count = null;
@@ -152,7 +183,7 @@ $timeToReach = function($target) use ($lastCount, $average) {
 <body>
 
 <h1>Petition tracker</h1>
-<h2><a href="https://petition.parliament.uk/petitions/171928">Prevent Donald Trump from making a State Visit to the United Kingdom</a></h2>
+<h2><a href="<?= $link ?>"><?= $title ?></a></h2>
 
 <dl>
     <dt>Current count on <?php echo $item['date']->format('D jS M') ?> at <?php echo $item['date']->format('g:ia') ?></dt>
