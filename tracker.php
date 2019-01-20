@@ -16,7 +16,7 @@ function trackPetition($petitionId, $htmlOutput)
 {
     global $filesystem;
 
-    $signatureCountFile = 'signature_count.' . $petitionId . '.txt';
+    $signatureCountFile = __DIR__ . '/data/signature_count.' . $petitionId . '.txt';
     if ($filesystem->has($signatureCountFile)) {
         $signature_count = json_decode($filesystem->read($signatureCountFile));
         if ($signature_count === false) {
