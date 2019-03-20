@@ -17,7 +17,7 @@ date_default_timezone_set('Europe/London');
 require_once 'vendor/autoload.php';
 require_once 'petitions.php';
 
-$adapter = new Local(__DIR__);
+$adapter = new Local(__DIR__ . '/data/');
 $filesystem = new Filesystem($adapter);
 
 if (!isset($petitionId) || !is_numeric($petitionId)) {
